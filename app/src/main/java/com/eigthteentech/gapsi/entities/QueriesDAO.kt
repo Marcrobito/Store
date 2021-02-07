@@ -17,4 +17,7 @@ interface QueriesDAO {
 
     @Query("SELECT * FROM queries")
     fun getItems(): List<QueryEntity>
+
+    @Query("SELECT * FROM queries WHERE name LIKE :name")
+    fun getItem(name:String): List<QueryEntity>
 }

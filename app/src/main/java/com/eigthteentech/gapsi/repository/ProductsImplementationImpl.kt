@@ -1,7 +1,5 @@
 package com.eigthteentech.gapsi.repository
 
-import android.util.Log
-import com.eigthteentech.gapsi.entities.ProductEntity
 import com.eigthteentech.gapsi.entities.ResponseEntity
 import com.eigthteentech.gapsi.network.ProductsApi
 import kotlinx.coroutines.Dispatchers

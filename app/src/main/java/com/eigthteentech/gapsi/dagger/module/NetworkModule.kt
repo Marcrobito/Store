@@ -24,7 +24,6 @@ class NetworkModule {
                         .addHeader(Constants.HEADER, Constants.API_KEY).build()
                 )
             }catch (e: Exception) {
-                Log.e("TAG", e.toString())
                 val offlineRequest = it.request().newBuilder()
                     .cacheControl(CacheControl.FORCE_CACHE)
                     .build()
